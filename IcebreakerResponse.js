@@ -6,8 +6,8 @@ function IcebreakerResponse(email){
 //const data = [];
 
 
-IcebreakerResponse.BatchCreate= function(data) {
+IcebreakerResponse.BatchCreate = function(data) {
   return data.map(function (emails) {
-    return new IcebreakerResponse(emails[0], emails[1]);
+    return new IcebreakerResponse(emails);
   });
 }
